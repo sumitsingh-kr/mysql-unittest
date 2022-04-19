@@ -113,7 +113,6 @@ class MySqlConnection:
         print('Connecting to ' + self.MYSQL_HOST + '\n')
         
         self.connection = mysql.connector.connect(host = self.MYSQL_HOST, port = self.MYSQL_PORT, user = self.MYSQL_USERNAME, password = self.MYSQL_PASSWORD) 
-        print(self.connection)
         LOGGER.info('\nMYSQL Client without ssh created\n')
         print('\nMYSQL Client without ssh created\n')
 
