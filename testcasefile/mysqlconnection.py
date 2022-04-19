@@ -7,7 +7,6 @@ Created on Thu Jan 13 19:09:09 2022
 """
 
 
-import unittest
 import mysql.connector
 import sshtunnel
 import os
@@ -33,7 +32,6 @@ class MySqlConnection:
                  param_MYSQL_SSH_USERNAME = None, param_MYSQL_SSH_PASSWORD = None,
                  param_MYSQL_DATABASE = None
 		 ):
-
         self.without_ssh = param_without_ssh
         default_config_filepath = f"{BASE_DIR}\config.json"
 
@@ -115,7 +113,7 @@ class MySqlConnection:
         print('Connecting to ' + self.MYSQL_HOST + '\n')
         
         self.connection = mysql.connector.connect(host = self.MYSQL_HOST, port = self.MYSQL_PORT, user = self.MYSQL_USERNAME, password = self.MYSQL_PASSWORD) 
-
+        print(self.connection)
         LOGGER.info('\nMYSQL Client without ssh created\n')
         print('\nMYSQL Client without ssh created\n')
 
@@ -160,9 +158,6 @@ class MySqlConnection:
         else:
             self.connect_with_ssh()
             self.mysql_connection = self.connection
-
-
-    
         
     
 if __name__ == '__main__':
