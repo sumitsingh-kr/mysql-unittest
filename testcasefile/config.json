@@ -1,13 +1,13 @@
 {
-"MYSQL_USERNAME" :"sumit",
-"MYSQL_PASSWORD" : "ss17222@@S",
-"MYSQL_HOST" : "serverforetl.mysql.database.azure.com",
-"MYSQL_PORT" : "3306",
+"MYSQL_USERNAME" :"",
+"MYSQL_PASSWORD" : "",
+"MYSQL_HOST" : "",
+"MYSQL_PORT" : "",
 
 "MYSQL_SSH_HOST" : "",
 "MYSQL_SSH_PASSWORD" : "",
 "MYSQL_SSH_PORT" : "",
 "MYSQL_SSH_USERNAME": "",
-"MYSQL_DATABASE" : "salesdb"
+"MYSQL_DATABASE" : ""
 }
 
