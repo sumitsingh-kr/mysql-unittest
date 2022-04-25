@@ -154,9 +154,11 @@ class MySqlConnection:
         if(self.without_ssh == True):
             self.connect_without_ssh()
             self.mysql_connection = self.connection
+            
         else:
             self.connect_with_ssh()
             self.mysql_connection = self.connection
+            
         
     
 if __name__ == '__main__':
